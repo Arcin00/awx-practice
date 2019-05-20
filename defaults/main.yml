@@ -1,2 +1,8 @@
 ---
-# defaults file for awx-practice/
+- name: First Play
+  hosts: all
+  tasks:
+  - name: First task
+    yum:
+      name: httpd, php
+      state: present
